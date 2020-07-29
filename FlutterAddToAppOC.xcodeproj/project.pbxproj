@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8672ECB761249EF23142F4EF /* libPods-FlutterAddToAppOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9D3D263B8F3D8875D1AD8B /* libPods-FlutterAddToAppOC.a */; };
 		91C999A424D12E0F009965D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C999A324D12E0F009965D2 /* AppDelegate.m */; };
 		91C999A724D12E0F009965D2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C999A624D12E0F009965D2 /* SceneDelegate.m */; };
 		91C999AA24D12E0F009965D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C999A924D12E0F009965D2 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A9D3D263B8F3D8875D1AD8B /* libPods-FlutterAddToAppOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlutterAddToAppOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C9999F24D12E0F009965D2 /* FlutterAddToAppOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlutterAddToAppOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C999A224D12E0F009965D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91C999A324D12E0F009965D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		91C999C524D12E14009965D2 /* FlutterAddToAppOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlutterAddToAppOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C999C924D12E14009965D2 /* FlutterAddToAppOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterAddToAppOCUITests.m; sourceTree = "<group>"; };
 		91C999CB24D12E14009965D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B480FF02BEA2A74B77D9591D /* Pods-FlutterAddToAppOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterAddToAppOC.release.xcconfig"; path = "Target Support Files/Pods-FlutterAddToAppOC/Pods-FlutterAddToAppOC.release.xcconfig"; sourceTree = "<group>"; };
+		D5931CB376955210DD1ADA7D /* Pods-FlutterAddToAppOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterAddToAppOC.debug.xcconfig"; path = "Target Support Files/Pods-FlutterAddToAppOC/Pods-FlutterAddToAppOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8672ECB761249EF23142F4EF /* libPods-FlutterAddToAppOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845C4CD97E50F61FA2F3941F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5931CB376955210DD1ADA7D /* Pods-FlutterAddToAppOC.debug.xcconfig */,
+				B480FF02BEA2A74B77D9591D /* Pods-FlutterAddToAppOC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		91C9999624D12E0F009965D2 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +103,8 @@
 				91C999BD24D12E14009965D2 /* FlutterAddToAppOCTests */,
 				91C999C824D12E14009965D2 /* FlutterAddToAppOCUITests */,
 				91C999A024D12E0F009965D2 /* Products */,
+				845C4CD97E50F61FA2F3941F /* Pods */,
+				EDBCF424ABA4DE905C1FDBFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +154,14 @@
 			path = FlutterAddToAppOCUITests;
 			sourceTree = "<group>";
 		};
+		EDBCF424ABA4DE905C1FDBFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D3D263B8F3D8875D1AD8B /* libPods-FlutterAddToAppOC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91C999CE24D12E14009965D2 /* Build configuration list for PBXNativeTarget "FlutterAddToAppOC" */;
 			buildPhases = (
+				24E4FDD263B57AF60A67D1DE /* [CP] Check Pods Manifest.lock */,
+				48E3C026A9C9C9B72FB5C108 /* [CP-User] Run Flutter Build Script */,
 				91C9999B24D12E0F009965D2 /* Sources */,
 				91C9999C24D12E0F009965D2 /* Frameworks */,
 				91C9999D24D12E0F009965D2 /* Resources */,
+				5BE18FD82C23CFACC394AA64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +289,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24E4FDD263B57AF60A67D1DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlutterAddToAppOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48E3C026A9C9C9B72FB5C108 /* [CP-User] Run Flutter Build Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/test_flutter/.metadata",
+				"${SRCROOT}/test_flutter/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/test_flutter/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/test_flutter/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/test_flutter/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		5BE18FD82C23CFACC394AA64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlutterAddToAppOC/Pods-FlutterAddToAppOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlutterAddToAppOC/Pods-FlutterAddToAppOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlutterAddToAppOC/Pods-FlutterAddToAppOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91C9999B24D12E0F009965D2 /* Sources */ = {
@@ -437,6 +523,7 @@
 		};
 		91C999CF24D12E14009965D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5931CB376955210DD1ADA7D /* Pods-FlutterAddToAppOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +542,7 @@
 		};
 		91C999D024D12E14009965D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B480FF02BEA2A74B77D9591D /* Pods-FlutterAddToAppOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
